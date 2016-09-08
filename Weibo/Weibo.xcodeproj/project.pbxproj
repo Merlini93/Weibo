@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D5EA82C11D810CF2004A85FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA82C01D810CF2004A85FC /* AppDelegate.swift */; };
-		D5EA82C31D810CF2004A85FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA82C21D810CF2004A85FC /* ViewController.swift */; };
-		D5EA82C61D810CF2004A85FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5EA82C41D810CF2004A85FC /* Main.storyboard */; };
 		D5EA82C81D810CF2004A85FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5EA82C71D810CF2004A85FC /* Assets.xcassets */; };
-		D5EA82CB1D810CF2004A85FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5EA82C91D810CF2004A85FC /* LaunchScreen.storyboard */; };
 		D5EA82D61D810CF3004A85FC /* WeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA82D51D810CF3004A85FC /* WeiboTests.swift */; };
 		D5EA82E11D810CF3004A85FC /* WeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA82E01D810CF3004A85FC /* WeiboUITests.swift */; };
+		D5EA83021D811869004A85FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA83011D811869004A85FC /* MainViewController.swift */; };
+		D5EA83041D811DD9004A85FC /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA83031D811DD9004A85FC /* HomeTableViewController.swift */; };
+		D5EA83061D811DF7004A85FC /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA83051D811DF7004A85FC /* DiscoverTableViewController.swift */; };
+		D5EA83081D811E03004A85FC /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA83071D811E03004A85FC /* MessageTableViewController.swift */; };
+		D5EA830A1D811E0D004A85FC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA83091D811E0D004A85FC /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +38,7 @@
 /* Begin PBXFileReference section */
 		D5EA82BD1D810CF2004A85FC /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5EA82C01D810CF2004A85FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5EA82C21D810CF2004A85FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D5EA82C51D810CF2004A85FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5EA82C71D810CF2004A85FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5EA82CA1D810CF2004A85FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5EA82CC1D810CF2004A85FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5EA82D11D810CF3004A85FC /* WeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5EA82D51D810CF3004A85FC /* WeiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboTests.swift; sourceTree = "<group>"; };
@@ -47,6 +46,11 @@
 		D5EA82DC1D810CF3004A85FC /* WeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5EA82E01D810CF3004A85FC /* WeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboUITests.swift; sourceTree = "<group>"; };
 		D5EA82E21D810CF3004A85FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5EA83011D811869004A85FC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D5EA83031D811DD9004A85FC /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		D5EA83051D811DF7004A85FC /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		D5EA83071D811E03004A85FC /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		D5EA83091D811E0D004A85FC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				D5EA82C01D810CF2004A85FC /* AppDelegate.swift */,
-				D5EA82C21D810CF2004A85FC /* ViewController.swift */,
-				D5EA82C41D810CF2004A85FC /* Main.storyboard */,
+				D5EA82F51D8116ED004A85FC /* Classes */,
 				D5EA82C71D810CF2004A85FC /* Assets.xcassets */,
-				D5EA82C91D810CF2004A85FC /* LaunchScreen.storyboard */,
 				D5EA82CC1D810CF2004A85FC /* Info.plist */,
 			);
 			path = Weibo;
@@ -123,6 +125,74 @@
 				D5EA82E21D810CF3004A85FC /* Info.plist */,
 			);
 			path = WeiboUITests;
+			sourceTree = "<group>";
+		};
+		D5EA82F51D8116ED004A85FC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5EA82F61D8116ED004A85FC /* Common */,
+				D5EA82F71D8116ED004A85FC /* Discover */,
+				D5EA82F81D8116ED004A85FC /* Home */,
+				D5EA82F91D8116ED004A85FC /* Main */,
+				D5EA82FA1D8116ED004A85FC /* Message */,
+				D5EA82FB1D8116ED004A85FC /* Profile */,
+				D5EA82FC1D8116ED004A85FC /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D5EA82F61D8116ED004A85FC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D5EA82F71D8116ED004A85FC /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				D5EA83051D811DF7004A85FC /* DiscoverTableViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		D5EA82F81D8116ED004A85FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5EA83031D811DD9004A85FC /* HomeTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D5EA82F91D8116ED004A85FC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D5EA83011D811869004A85FC /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D5EA82FA1D8116ED004A85FC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D5EA83071D811E03004A85FC /* MessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		D5EA82FB1D8116ED004A85FC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D5EA83091D811E0D004A85FC /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D5EA82FC1D8116ED004A85FC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5EA82CB1D810CF2004A85FC /* LaunchScreen.storyboard in Resources */,
 				D5EA82C81D810CF2004A85FC /* Assets.xcassets in Resources */,
-				D5EA82C61D810CF2004A85FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5EA82C31D810CF2004A85FC /* ViewController.swift in Sources */,
+				D5EA830A1D811E0D004A85FC /* ProfileTableViewController.swift in Sources */,
+				D5EA83041D811DD9004A85FC /* HomeTableViewController.swift in Sources */,
+				D5EA83021D811869004A85FC /* MainViewController.swift in Sources */,
+				D5EA83061D811DF7004A85FC /* DiscoverTableViewController.swift in Sources */,
+				D5EA83081D811E03004A85FC /* MessageTableViewController.swift in Sources */,
 				D5EA82C11D810CF2004A85FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,25 +363,6 @@
 			targetProxy = D5EA82DD1D810CF3004A85FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D5EA82C41D810CF2004A85FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5EA82C51D810CF2004A85FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D5EA82C91D810CF2004A85FC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5EA82CA1D810CF2004A85FC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D5EA82E31D810CF3004A85FC /* Debug */ = {
@@ -399,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Developer.Merlini.Weibo;
@@ -410,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Developer.Merlini.Weibo;
@@ -482,6 +537,7 @@
 				D5EA82E71D810CF3004A85FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5EA82E81D810CF3004A85FC /* Build configuration list for PBXNativeTarget "WeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +546,7 @@
 				D5EA82EA1D810CF3004A85FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5EA82EB1D810CF3004A85FC /* Build configuration list for PBXNativeTarget "WeiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +555,7 @@
 				D5EA82ED1D810CF3004A85FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
