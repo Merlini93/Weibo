@@ -1,5 +1,5 @@
 //
-//  MessageTableViewController.swift
+//  BaseTableViewController.swift
 //  Weibo
 //
 //  Created by 李遨东 on 16/9/8.
@@ -8,14 +8,27 @@
 
 import UIKit
 
-class MessageTableViewController: BaseTableViewController {
+class BaseTableViewController: UITableViewController {
+    
+    var userLogin = false
+    var visitorView: VisitorView?
+    
+    
+    
+    override func loadView() {
+        
+        userLogin ? super.loadView() : setupVisitorView()
+        
+    }
+    
+    private func setupVisitorView(){
+        let customView = VisitorView()
+        view = customView
+        visitorView = customView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if !userLogin {
-            visitorView?.setupVisitorInfo(false, imageName: "visitordiscover_image_message",    message: "登录后，别人评论你的微博")
-        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

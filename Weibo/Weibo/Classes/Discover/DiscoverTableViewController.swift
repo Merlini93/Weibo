@@ -8,11 +8,14 @@
 
 import UIKit
 
-class DiscoverTableViewController: UITableViewController {
+class DiscoverTableViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if !userLogin {
+            visitorView?.setupVisitorInfo(false, imageName: "visitordiscover_image_message", message: "登录后不再错过精彩")
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

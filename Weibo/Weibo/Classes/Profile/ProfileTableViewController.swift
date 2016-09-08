@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ProfileTableViewController: UITableViewController {
+class ProfileTableViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        if !userLogin {
+            visitorView?.setupVisitorInfo(false, imageName: "visitordiscover_image_profile", message: "展示资料")
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
