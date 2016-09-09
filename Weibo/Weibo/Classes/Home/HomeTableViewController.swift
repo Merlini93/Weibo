@@ -15,7 +15,33 @@ class HomeTableViewController: BaseTableViewController {
 
         if !userLogin {
             visitorView?.setupVisitorInfo(true, imageName: "visitordiscover_feed_image_house    ", message: "关注一些人，回这里看看有什么惊喜?")
+            return
         }
+        
+        setupNavi()
+    }
+    
+    private func setupNavi(){
+        navigationItem.leftBarButtonItem = UIBarButtonItem.createBarButtonItem("navigationbar_friendattention",target: self,action: NSSelectorFromString("leftClick"))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem.createBarButtonItem("navigationbar_pop",target: self, action: NSSelectorFromString("rightClick"))
+        
+        let titlebtn = TitleButton()
+        titlebtn.setTitle("你爹 ", forState: UIControlState.Normal)
+        titlebtn.addTarget(self, action: #selector(titleClick), forControlEvents: UIControlEvents.TouchUpInside)
+        navigationItem.titleView = titlebtn
+    }
+    
+    func titleClick(sender: UIButton) {
+        sender.selected = !sender.selected
+    }
+    
+    func leftClick() {
+        print("点击左边导航栏")
+    }
+    
+    func rightClick() {
+        print("点击右边导航栏")
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,7 +8,14 @@
 
 import UIKit
 
+protocol VisitorViewDelegate: NSObjectProtocol {
+    func loginFunc()
+    func regFunc()
+}
+
 class VisitorView: UIView {
+    
+    weak var delegate: VisitorViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -93,6 +100,7 @@ class VisitorView: UIView {
     
     func loginClick(sender: UIButton) {
         print("登录")
+        delegate?.loginFunc()
     }
     
     private lazy var registerBtn: UIButton = {
@@ -107,7 +115,7 @@ class VisitorView: UIView {
     
     func regClick(sender: UIButton) {
         print("注册")
-        
+        delegate?.regFunc()
     }
     
     private lazy var bgView: UIImageView = {

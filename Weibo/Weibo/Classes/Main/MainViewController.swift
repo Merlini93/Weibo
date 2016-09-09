@@ -20,7 +20,7 @@ class MainViewController: UITabBarController {
             
             do {
                 let dictArr = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers)
-                print(dictArr)
+//                print(dictArr)
             } catch {
                 print(error)
             }

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class BaseTableViewController: UITableViewController {
+class BaseTableViewController: UITableViewController,VisitorViewDelegate {
     
-    var userLogin = false
+    var userLogin = true
     var visitorView: VisitorView?
     
     
@@ -18,13 +18,26 @@ class BaseTableViewController: UITableViewController {
     override func loadView() {
         
         userLogin ? super.loadView() : setupVisitorView()
-        
+
     }
     
     private func setupVisitorView(){
         let customView = VisitorView()
         view = customView
+        customView.delegate = self
         visitorView = customView
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(regFunc))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(loginFunc))
+//        navigationController?.navigationBar.tintColor = UIColor.orangeColor()   
+    }
+    
+    func loginFunc() {
+        print("响应登录")
+    }
+    
+    func regFunc() {
+        print("响应注册")
     }
 
     override func viewDidLoad() {
@@ -35,6 +48,7 @@ class BaseTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
     }
 
     override func didReceiveMemoryWarning() {
